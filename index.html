@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MK Mobile - ศูนย์รวมมือถือมือสอง</title>
+    <title>MK Mobile - ศูนย์จำหน่ายมือถือมือหนึ่ง</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpeg" href="./img/logo.jpg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,48 +15,55 @@
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
-        <div class="logo">MK Mobile</div>
+        <div class="logo">
+          <img src="./img/logo.jpg" alt="MK Mobile Logo" class="logo-img" />
+          <span>MK Mobile</span>
+        </div>
         <button class="nav-toggle" id="navToggle">
           <span></span>
           <span></span>
           <span></span>
         </button>
         <ul class="nav-menu" id="navMenu">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About Us</a></li>
-          <li><a href="#location" class="nav-link">Location</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="location.html" class="nav-link">Location</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </nav>
 
     <!-- Home Section -->
     <section id="home" class="section home-section">
-      <!-- Hero Banner -->
-      <div class="hero-banner">
+      <!-- Hero Banner with Background Image -->
+      <div class="hero-banner" style="background-image: url('./img/banner.jpg');">
         <div class="hero-overlay"></div>
         <div class="hero-content">
+          <div class="profile-container">
+            <img src="./img/profile.png" alt="MK Mobile Profile" class="profile-image" />
+          </div>
           <h1 class="hero-title">MK Mobile</h1>
           <p class="hero-subtitle">
-            ศูนย์รวมมือถือมือสอง คุณภาพดี ราคาเป็นกันเอง
+            ศูนย์จำหน่ายมือถือมือหนึ่ง คุณภาพดี ราคาเป็นกันเอง<br/>
+            ผ่อนสบาย 0% ทุกรุ่น ทุกยี่ห้อ
           </p>
           <div class="hero-buttons">
             <a
-              href="https://line.me/ti/p/~yourid"
+              href="https://line.me/R/ti/p/@mkmobiles"
               class="btn btn-line"
               target="_blank"
             >
-              <i class="fab fa-line"></i> Line
+              <i class="fab fa-line"></i> Line @mkmobiles
             </a>
             <a
-              href="https://m.me/yourpage"
+              href="https://www.facebook.com/mkmobilemkmobiles"
               class="btn btn-messenger"
               target="_blank"
             >
-              <i class="fab fa-facebook-messenger"></i> Messenger
+              <i class="fab fa-facebook"></i> Facebook
             </a>
-            <a href="tel:0812345678" class="btn btn-phone">
-              <i class="fas fa-phone"></i> โทร
+            <a href="tel:0893915642" class="btn btn-phone">
+              <i class="fas fa-phone"></i> 089-391-5642
             </a>
           </div>
         </div>
@@ -68,21 +76,21 @@
             <div class="highlight-icon">
               <i class="fas fa-mobile-alt"></i>
             </div>
-            <h3>มือถือมากกว่า 500 รุ่น</h3>
-            <p>เลือกได้ตามใจชอบ</p>
+            <h3>สินค้ามือหนึ่ง 100%</h3>
+            <p>ของแท้ ประกันศูนย์</p>
           </div>
           <div class="highlight-card">
             <div class="highlight-icon">
               <i class="fas fa-shield-alt"></i>
             </div>
             <h3>รับประกันคุณภาพ</h3>
-            <p>ตรวจสอบทุกเครื่อง</p>
+            <p>มั่นใจทุกเครื่อง</p>
           </div>
           <div class="highlight-card">
             <div class="highlight-icon">
               <i class="fas fa-credit-card"></i>
             </div>
-            <h3>ผ่อนได้ 0%</h3>
+            <h3>ผ่อน 0% นานสูงสุด 10 เดือน</h3>
             <p>สะดวก ง่ายดาย</p>
           </div>
         </div>
@@ -99,7 +107,6 @@
             </div>
             <div class="product-info">
               <h3>iPhone 14 Pro</h3>
-              <p class="product-price">฿25,900</p>
             </div>
           </div>
           <div class="product-card">
@@ -108,7 +115,6 @@
             </div>
             <div class="product-info">
               <h3>iPhone 13</h3>
-              <p class="product-price">฿18,900</p>
             </div>
           </div>
           <div class="product-card">
@@ -118,7 +124,6 @@
             </div>
             <div class="product-info">
               <h3>Samsung S23</h3>
-              <p class="product-price">฿22,900</p>
             </div>
           </div>
           <div class="product-card">
@@ -127,7 +132,6 @@
             </div>
             <div class="product-info">
               <h3>iPhone 12</h3>
-              <p class="product-price">฿14,900</p>
             </div>
           </div>
           <div class="product-card">
@@ -136,7 +140,6 @@
             </div>
             <div class="product-info">
               <h3>Xiaomi 13</h3>
-              <p class="product-price">฿16,900</p>
             </div>
           </div>
           <div class="product-card">
@@ -145,448 +148,37 @@
             </div>
             <div class="product-info">
               <h3>Oppo Find X5</h3>
-              <p class="product-price">฿13,900</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- About Preview -->
-      <div class="about-preview">
-        <div class="container">
-          <h2 class="section-title">เกี่ยวกับเรา</h2>
-          <p class="about-preview-text">
-            MK Mobile เป็นศูนย์รวมมือถือมือสองคุณภาพ ด้วยประสบการณ์กว่า 5 ปี
-            เราเชี่ยวชาญในการคัดสรรมือถือคุณภาพดี ราคาเป็นกันเอง
-            พร้อมบริการหลังการขายที่ดีเยี่ยม ให้คุณมั่นใจในทุกการซื้อขาย
-          </p>
-          <a href="#about" class="btn btn-primary">อ่านเพิ่มเติม</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="section about-section">
+      <!-- Video Section -->
       <div class="container">
-        <h2 class="section-title">เกี่ยวกับ MK Mobile</h2>
-
-        <div class="about-intro">
-          <p>
-            MK Mobile เปิดให้บริการมากกว่า
-            <strong>5 ปี</strong> โดยเริ่มต้นจากร้านเล็กๆ จนเติบโตเป็น
-            <strong>2 สาขา</strong> ในปัจจุบัน
-            ด้วยความมุ่งมั่นในการให้บริการที่ดีที่สุด
-          </p>
-        </div>
-
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number">5+</div>
-            <div class="stat-label">ปีประสบการณ์</div>
+        <h2 class="section-title">วีดีโอจากเรา</h2>
+        <div class="video-grid">
+          <div class="video-card">
+            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1497253278039320%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">2</div>
-            <div class="stat-label">สาขา</div>
+          <div class="video-card">
+            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1643980576560310%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">10,000+</div>
-            <div class="stat-label">เครื่องที่ขายไป</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">500+</div>
-            <div class="stat-label">รีวิวดีๆ</div>
-          </div>
-        </div>
-
-        <div class="services-section">
-          <h3 class="subsection-title">บริการของเรา</h3>
-          <div class="services-grid">
-            <div class="service-card">
-              <i class="fas fa-shopping-cart"></i>
-              <h4>ซื้อ-ขาย</h4>
-              <p>รับซื้อมือถือมือสอง ราคาสูง ขายมือถือคุณภาพ ราคาดี</p>
-            </div>
-            <div class="service-card">
-              <i class="fas fa-exchange-alt"></i>
-              <h4>แลกเปลี่ยน</h4>
-              <p>รับแลกเปลี่ยนมือถือเครื่องเก่า เป็นเครื่องใหม่</p>
-            </div>
-            <div class="service-card">
-              <i class="fas fa-credit-card"></i>
-              <h4>ผ่อนชำระ 0%</h4>
-              <p>ผ่อนได้ทุกธนาคาร ดอกเบี้ย 0% นาน 3-10 เดือน</p>
-            </div>
-            <div class="service-card">
-              <i class="fas fa-tools"></i>
-              <h4>ซ่อม-เคลม</h4>
-              <p>บริการซ่อม และรับประกันสินค้า</p>
-            </div>
-            <div class="service-card">
-              <i class="fas fa-clipboard-check"></i>
-              <h4>ตรวจเช็คสภาพ</h4>
-              <p>ตรวจสอบเครื่องทุกเครื่องก่อนส่งมอบ</p>
-            </div>
-            <div class="service-card">
-              <i class="fas fa-headset"></i>
-              <h4>บริการหลังการขาย</h4>
-              <p>ดูแลคุณแม้หลังการซื้อขาย</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="branch-preview">
-          <h3 class="subsection-title">สาขาของเรา</h3>
-          <div class="branch-images">
-            <div class="branch-image-card">
-              <img src="./img/shop1.jpg" alt="สาขา 1" />
-              <p>สาขา 1 - ตลาดเซ็นทรัล</p>
-            </div>
-            <div class="branch-image-card">
-              <img src="./img/shop1.jpg" alt="สาขา 2" />
-              <p>สาขา 2 - ห้างสรรพสินค้า ABC</p>
-            </div>
+          <div class="video-card">
+            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F963579109124351%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Location Section -->
-    <section id="location" class="section location-section">
-      <div class="container">
-        <h2 class="section-title">สาขาของเรา</h2>
-        <p class="section-subtitle">ปัจจุบันเรามี 2 สาขา พร้อมให้บริการคุณ</p>
-
-        <div class="locations-grid">
-          <!-- Branch 1 -->
-          <div class="location-card">
-            <div class="location-image">
-              <img src="./img/shop1.jpg" alt="สาขา 1" />
-              <div class="location-badge">สาขา 1</div>
-            </div>
-            <div class="location-info">
-              <h3>สาขาตลาดเซ็นทรัล</h3>
-              <div class="location-details">
-                <div class="detail-item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span>ชั้น 2 ตลาดเซ็นทรัล ถนนรัชดาภิเษก</span>
-                </div>
-                <div class="detail-item">
-                  <i class="fas fa-phone"></i>
-                  <a href="tel:0812345678">081-234-5678</a>
-                </div>
-                <div class="detail-item">
-                  <i class="fas fa-clock"></i>
-                  <span>เปิดทุกวัน 10:00 - 20:00 น.</span>
-                </div>
-              </div>
-              <a
-                href="https://maps.google.com/?q=13.7563,100.5018"
-                target="_blank"
-                class="btn btn-map"
-              >
-                <i class="fas fa-map"></i> ดูแผนที่
-              </a>
-            </div>
-          </div>
-
-          <!-- Branch 2 -->
-          <div class="location-card">
-            <div class="location-image">
-              <img src="./img/shop1.jpg" alt="สาขา 2" />
-              <div class="location-badge">สาขา 2</div>
-            </div>
-            <div class="location-info">
-              <h3>สาขาห้าง ABC</h3>
-              <div class="location-details">
-                <div class="detail-item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span>ชั้น 3 ห้างสรรพสินค้า ABC ถนนพระราม 9</span>
-                </div>
-                <div class="detail-item">
-                  <i class="fas fa-phone"></i>
-                  <a href="tel:0823456789">082-345-6789</a>
-                </div>
-                <div class="detail-item">
-                  <i class="fas fa-clock"></i>
-                  <span>เปิดทุกวัน 10:00 - 21:00 น.</span>
-                </div>
-              </div>
-              <a
-                href="https://maps.google.com/?q=13.7563,100.5618"
-                target="_blank"
-                class="btn btn-map"
-              >
-                <i class="fas fa-map"></i> ดูแผนที่
-              </a>
-            </div>
-          </div>
-
-          <!-- Coming Soon Branches -->
-          <div class="location-card coming-soon">
-            <div class="location-image">
-              <img src="./img/shop1.jpg" alt="สาขา 3" />
-              <div class="coming-soon-badge">
-                <i class="fas fa-clock"></i>
-                <span>เร็วๆ นี้</span>
-              </div>
-            </div>
-            <div class="location-info">
-              <h3>สาขาที่ 3 - กำลังจะเปิด!</h3>
-              <p>
-                ติดตามข่าวสารการเปิดสาขาใหม่ได้ที่ช่องทาง Social Media ของเรา
-              </p>
-            </div>
-          </div>
-
-          <div class="location-card coming-soon">
-            <div class="location-image">
-              <img src="./img/shop1.jpg" alt="สาขา 4" />
-              <div class="coming-soon-badge">
-                <i class="fas fa-clock"></i>
-                <span>เร็วๆ นี้</span>
-              </div>
-            </div>
-            <div class="location-info">
-              <h3>สาขาที่ 4 - กำลังจะเปิด!</h3>
-              <p>เรากำลังขยายสาขาเพื่อให้บริการคุณได้ดียิ่งขึ้น</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="expansion-info">
-          <h3>เราขยายกิจการอย่างต่อเนื่อง</h3>
-          <p>
-            เป้าหมายของเราคือการเปิดสาขาให้ครอบคลุมทุกพื้นที่
-            เพื่อความสะดวกของลูกค้าทุกท่าน
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <h2 class="section-title">ติดต่อเรา</h2>
-        <p class="section-subtitle">พร้อมให้บริการและให้คำปรึกษาทุกช่องทาง</p>
-
-        <!-- Main Contact Methods -->
-        <div class="contact-methods">
-          <div class="contact-card">
-            <div class="contact-icon line-color">
-              <i class="fab fa-line"></i>
-            </div>
-            <h3>Line Official</h3>
-            <p>@mkmobile</p>
-            <a
-              href="https://line.me/ti/p/~yourid"
-              target="_blank"
-              class="btn btn-line"
-            >
-              <i class="fab fa-line"></i> เพิ่มเพื่อน
-            </a>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon messenger-color">
-              <i class="fab fa-facebook-messenger"></i>
-            </div>
-            <h3>Facebook Messenger</h3>
-            <p>MK Mobile Official</p>
-            <a
-              href="https://m.me/yourpage"
-              target="_blank"
-              class="btn btn-messenger"
-            >
-              <i class="fab fa-facebook-messenger"></i> ส่งข้อความ
-            </a>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon phone-color">
-              <i class="fas fa-phone"></i>
-            </div>
-            <h3>โทรศัพท์</h3>
-            <p>สาขา 1: 081-234-5678<br />สาขา 2: 082-345-6789</p>
-            <a href="tel:0812345678" class="btn btn-phone">
-              <i class="fas fa-phone"></i> โทรเลย
-            </a>
-          </div>
-        </div>
-
-        <!-- Detailed Contact Info -->
-        <div class="contact-details-section">
-          <h3 class="subsection-title">ข้อมูลติดต่อแบบละเอียด</h3>
-
-          <div class="contact-info-grid">
-            <!-- Sales Contact -->
-            <div class="info-card">
-              <div class="info-header">
-                <i class="fas fa-shopping-bag"></i>
-                <h4>ติดต่อฝ่ายขาย</h4>
-              </div>
-              <div class="info-content">
-                <p><strong>สาขา 1 (ตลาดเซ็นทรัล)</strong></p>
-                <p>คุณแอน: 081-234-5678</p>
-                <p>คุณบี: 081-234-5679</p>
-                <p class="mt-2"><strong>สาขา 2 (ห้าง ABC)</strong></p>
-                <p>คุณซี: 082-345-6789</p>
-                <p>คุณดี: 082-345-6790</p>
-                <p class="info-note">เปิดบริการทุกวัน 10:00 - 20:00 น.</p>
-              </div>
-            </div>
-
-            <!-- Repair Service -->
-            <div class="info-card">
-              <div class="info-header">
-                <i class="fas fa-tools"></i>
-                <h4>แจ้งซ่อม/เคลม</h4>
-              </div>
-              <div class="info-content">
-                <p><strong>ช่องทางแจ้งซ่อม:</strong></p>
-                <p>📱 โทร: 081-999-8888</p>
-                <p>💬 Line: @mkmobile-repair</p>
-                <p>
-                  📧 Email:
-                  <a
-                    href="/cdn-cgi/l/email-protection"
-                    class="__cf_email__"
-                    data-cfemail="2f5d4a5f4e465d6f424442404d46434a014c4042"
-                    >[email&#160;protected]</a
-                  >
-                </p>
-                <p class="mt-2"><strong>ระยะเวลารับประกัน:</strong></p>
-                <p>• อุปกรณ์: 7 วัน</p>
-                <p>• เครื่อง: 30 วัน (เงื่อนไขตามกรมธรรม์)</p>
-                <p class="info-note">เปิดรับเรื่อง จ-ส 09:00 - 18:00 น.</p>
-              </div>
-            </div>
-
-            <!-- Customer Service -->
-            <div class="info-card">
-              <div class="info-header">
-                <i class="fas fa-headset"></i>
-                <h4>ฝ่ายบริการลูกค้า</h4>
-              </div>
-              <div class="info-content">
-                <p><strong>สอบถามข้อมูลทั่วไป:</strong></p>
-                <p>📱 โทร: 081-888-7777</p>
-                <p>💬 Line: @mkmobile</p>
-                <p>
-                  📧 Email:
-                  <a
-                    href="/cdn-cgi/l/email-protection"
-                    class="__cf_email__"
-                    data-cfemail="83eaede5ecc3eee8eeece1eaefe6ade0ecee"
-                    >[email&#160;protected]</a
-                  >
-                </p>
-                <p class="mt-2"><strong>ร้องเรียน/แนะนำบริการ:</strong></p>
-                <p>
-                  📧 Email:
-                  <a
-                    href="/cdn-cgi/l/email-protection"
-                    class="__cf_email__"
-                    data-cfemail="6c0a0909080e0d0f072c010701030e050009420f0301"
-                    >[email&#160;protected]</a
-                  >
-                </p>
-                <p class="info-note">ตอบกลับภายใน 24 ชั่วโมง</p>
-              </div>
-            </div>
-
-            <!-- Installment Info -->
-            <div class="info-card">
-              <div class="info-header">
-                <i class="fas fa-credit-card"></i>
-                <h4>สอบถามการผ่อนชำระ</h4>
-              </div>
-              <div class="info-content">
-                <p><strong>ติดต่อสอบถาม:</strong></p>
-                <p>📱 โทร: 081-777-6666</p>
-                <p>💬 Line: @mkmobile-credit</p>
-                <p class="mt-2"><strong>ธนาคารที่ร่วมบริการ:</strong></p>
-                <p>• กสิกรไทย, กรุงเทพ, ไทยพาณิชย์</p>
-                <p>• กรุงศรี, ธนชาต, TMB</p>
-                <p class="info-note">
-                  ผ่อน 0% นาน 3-10 เดือน (บัตรเครดิตที่ร่วมรายการ)
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Physical Address -->
-        <div class="address-section">
-          <h3 class="subsection-title">ที่อยู่สาขา</h3>
-          <div class="address-grid">
-            <div class="address-card">
-              <h4><i class="fas fa-store"></i> สาขา 1 - ตลาดเซ็นทรัล</h4>
-              <p class="address-text">
-                เลขที่ 123 ชั้น 2 ตลาดเซ็นทรัล<br />
-                ถนนรัชดาภิเษก แขวงดินแดง<br />
-                เขตดินแดง กรุงเทพมหานคร 10400
-              </p>
-              <div class="address-links">
-                <a
-                  href="https://maps.google.com/?q=13.7563,100.5018"
-                  target="_blank"
-                  class="btn-link"
-                >
-                  <i class="fas fa-map-marked-alt"></i> ดูใน Google Maps
-                </a>
-                <a href="tel:0812345678" class="btn-link">
-                  <i class="fas fa-phone"></i> 081-234-5678
-                </a>
-              </div>
-            </div>
-
-            <div class="address-card">
-              <h4><i class="fas fa-store"></i> สาขา 2 - ห้าง ABC</h4>
-              <p class="address-text">
-                เลขที่ 456 ชั้น 3 ห้างสรรพสินค้า ABC<br />
-                ถนนพระราม 9 แขวงห้วยขวาง<br />
-                เขตห้วยขวาง กรุงเทพมหานคร 10310
-              </p>
-              <div class="address-links">
-                <a
-                  href="https://maps.google.com/?q=13.7563,100.5618"
-                  target="_blank"
-                  class="btn-link"
-                >
-                  <i class="fas fa-map-marked-alt"></i> ดูใน Google Maps
-                </a>
-                <a href="tel:0823456789" class="btn-link">
-                  <i class="fas fa-phone"></i> 082-345-6789
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Social Media -->
-        <div class="social-section">
-          <h3 class="subsection-title">ติดตามเราบน Social Media</h3>
-          <div class="social-links">
-            <a href="#" class="social-btn facebook">
-              <i class="fab fa-facebook"></i>
-              <span>Facebook</span>
-            </a>
-            <a href="#" class="social-btn instagram">
-              <i class="fab fa-instagram"></i>
-              <span>Instagram</span>
-            </a>
-            <a href="#" class="social-btn tiktok">
-              <i class="fab fa-tiktok"></i>
-              <span>TikTok</span>
-            </a>
-            <a href="#" class="social-btn youtube">
-              <i class="fab fa-youtube"></i>
-              <span>YouTube</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+      <a href="https://line.me/R/ti/p/@mkmobiles" target="_blank" class="fab-btn fab-line">
+        <i class="fab fa-line"></i>
+      </a>
+      <a href="tel:0893915642" class="fab-btn fab-phone">
+        <i class="fas fa-phone"></i>
+      </a>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -594,36 +186,40 @@
         <div class="footer-content">
           <div class="footer-section">
             <h4>MK Mobile</h4>
-            <p>ศูนย์รวมมือถือมือสอง คุณภาพดี ราคาเป็นกันเอง</p>
+            <p>ศูนย์จำหน่ายมือถือมือหนึ่ง คุณภาพดี ราคาเป็นกันเอง ผ่อน 0% ทุกรุ่น</p>
           </div>
           <div class="footer-section">
             <h4>เมนู</h4>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#location">Location</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="location.html">Location</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="footer-section">
             <h4>ติดต่อ</h4>
-            <p>📱 081-234-5678</p>
-            <p>
-              📧
-              <a
-                href="/cdn-cgi/l/email-protection"
-                class="__cf_email__"
-                data-cfemail="e980878f86a9848284868b80858cc78a8684"
-                >[email&#160;protected]</a
-              >
-            </p>
-            <p>💬 Line: @mkmobile</p>
+            <p>📱 089-391-5642</p>
+            <p>💬 Line: @mkmobiles</p>
+            <p>📘 Facebook: MK Mobile</p>
+          </div>
+          <div class="footer-section">
+            <h4>ติดตามเรา</h4>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/mkmobilemkmobiles" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/mkmobile.official" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.tiktok.com/@mkmobiles.official" target="_blank"><i class="fab fa-tiktok"></i></a>
+              <a href="https://www.youtube.com/@mkmobile.official" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://line.me/R/ti/p/@mkmobiles" target="_blank"><i class="fab fa-line"></i></a>
+            </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy</p>
+          <p>&copy; 2024 MK Mobile. All rights reserved.</p>
         </div>
       </div>
     </footer>
+    
+    <script src="script.js"></script>
   </body>
 </html>

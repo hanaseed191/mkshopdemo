@@ -93,6 +93,23 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo span {
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .nav-menu {
@@ -150,14 +167,31 @@ html {
 /* Hero Section */
 .hero-banner {
     position: relative;
-    height: 70vh;
-    min-height: 500px;
+    height: 80vh;
+    min-height: 600px;
     background: var(--gradient-1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 60px;
     overflow: hidden;
+}
+
+.profile-container {
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    animation: fadeInUp 0.8s ease-out;
 }
 
 .hero-banner::before {
@@ -358,6 +392,34 @@ html {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 25px;
     margin: 40px 0;
+}
+
+/* Video Grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+    justify-items: center;
+}
+
+.video-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.video-card iframe {
+    display: block;
+    max-width: 100%;
+    border-radius: 15px;
 }
 
 .product-card {
@@ -912,6 +974,10 @@ html {
     background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
 }
 
+.social-btn.line {
+    background: linear-gradient(135deg, #06c755 0%, #05b34c 100%);
+}
+
 .social-btn i {
     font-size: 1.3rem;
 }
@@ -964,6 +1030,24 @@ html {
     padding-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     opacity: 0.8;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.9;
+}
+
+.footer-social a:hover {
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 /* Floating Action Buttons */
